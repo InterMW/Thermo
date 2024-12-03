@@ -11,7 +11,7 @@ InfluxDB.
 
 Listens for temperature measurements, writes them to InfluxDB. 
 
-See [ThermalProcessor](Application/Processors/ThermalProcessor) for message info.
+See [ThermalProcessor](Application/Processors/ThermalProcessor.cs) for message info.
 
 ## Required Infrastructure
 |Product|Details|Database Install Link|
