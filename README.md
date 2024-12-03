@@ -13,6 +13,15 @@ Listens for temperature measurements, writes them to InfluxDB.
 
 See [ThermalProcessor](Application/Processors/ThermalProcessor.cs) for message info.
 
+## General information
+
+This project requires dotnet 8 sdk to run (install link [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)).
+
+When running locally, I have the rabbit password replaced using the dotnet user-secrets tool. 
+Please follow Microsoft's [guide](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-6.0&tabs=linux) to set the value of rabbit_pass to your configured rabbit account's password for the Applications.csproj.
+
+This project uses the MelbergFramework nuget package, please see [my github](https://github.com/Joseph-Melberg/) for more info.
+
 ## Required Infrastructure
 |Product|Details|Database Install Link|
 |-|-|-|
