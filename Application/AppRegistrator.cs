@@ -13,6 +13,9 @@ public class AppRegistrator : Registrator
     public override void RegisterServices(IServiceCollection services)
     {
         RabbitModule.RegisterMicroConsumer<
+            NodeThermalProcessor,
+            NodeTemperatureMessage>(services, false);
+        RabbitModule.RegisterMicroConsumer<
             ThermalProcessor,
             TemperatureMessage>(services, false);
 
